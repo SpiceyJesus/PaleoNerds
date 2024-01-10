@@ -3,17 +3,19 @@
     max-width: 1140px;
     /* width:1140px; */
     padding: 0 1rem;
+    grid-row: 15px;
+    
 }
 
 .container .row{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 30px;
 }
 
 .container .row [class*="col="]{
     margin: 0 0.5rem;
     padding: .5rem;
-
 }
 
 .container .row .col-1{
@@ -26,6 +28,7 @@
 
 .container .row .col-3{
     width: calc(3 / 12 * 100% - 1rem);
+    padding-right: 8%;
 }
 
 .container .row .col-4{
@@ -50,4 +53,23 @@
 
 .container .row .col-9{
     width: calc(9 / 12 * 100% - 1rem);
+}
+
+.container .row .col-10{
+    width: calc(10 / 12 * 100% - 1rem);
+}
+
+.container .row .col-11{
+    width: calc(11 / 12 * 100% - 1rem);
+}
+
+.container .row .col-12{
+    width: calc(12 / 12 * 100% - 1rem);
+}
+
+
+
+.container .row .col-13{
+    width: calc(3 / 12 * 100% - 1rem);
+    padding-left: 100px;
 }

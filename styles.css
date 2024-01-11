@@ -1,127 +1,159 @@
 body{
-    padding: 0;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
 }
 
 .top-nav-wrapper{
-    background-color:#3c6526 ;
-    display: flex;
-    justify-content: space-between;
+  background-color:#3c6526 ;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-nav-wrapper a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .top-nav{
-    background-color:#3c6526 ;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+  background-color:#3c6526 ;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .top-nav a{
-    color: white;
-    padding: 15px 15px;
-    text-decoration: none;
-    text-align: center;
-    list-style: none;
-    display: block;
-    margin-left: 5px;
+  color: white;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  display: block;
+  margin-left: 5px;
 
 }
 
 .active{
-    background-color: #3c6526;
+  background-color: #3c6526;
 }
 
 .top-nav a:hover:not(.active){
-    background-color: #79bf48;
+  background-color: #79bf48;
 }
 
 .top-nav{
-    list-style: none;
+  list-style: none;
 }
 
 .grid{
-    display: grid;
-    grid-gap: 10px;
+  display: grid;
+  grid-gap: 10px;
 }
 
 button{
-    width: 400px;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 12px 0;
-    position: relative;
-    top: 45%;
-    right: 6%;
-    cursor: pointer;
-    background: #74b452;
-    border: 0;
-    border-radius: 20px;
-    outline: 0
+  width: 400px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 0;
+  position: relative;
+  top: 45%;
+  right: 15%;
+  cursor: pointer;
+  background: #74b452;
+  border: none;
+  border-radius: 20px;
+  outline: 0
 }
 
 .text-container{
-    position: absolute;
-    grid-area: content;
-    text-align: center;
-    left: 75%;
-    top: 10%;
-    bottom: 60%;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .box1{
-    width: 400px;
-    height: 550px;
-    border-radius: 20px 20px 0px 0px;
-    background: #3c6526;
-    justify-content: left;
-    position: relative;
-    left: 70%;
-    bottom: 159px;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px 20px 0px 0px;
+  background: #3c6526;
+  justify-content: left;
+  position: relative;
+  left: 70%;
+  bottom: 109px;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-  }
+.blog{
+  padding: 4.5rem 0;
+}
+.blog-content{
+  margin: 2rem 0;
+}
+.blog-img{
+  position: relative;
+}
+.blog-img span{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.6rem;
+}
+.blog-text{
+  margin: 2.2rem 0;
+  padding: 0 1rem;
+}
 
-  .article {
-    width: 300px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
+.blog-text1{
+  margin: 2.2rem 0;
+  padding: 0 1rem;
+}
 
-  .article:hover {
-    transform: scale(1.05);
-  }
+.blog-text span{
+  font-weight: 300;
+  display: block;
+  padding-bottom: 0.5rem;
+  color: #ffffff;
+}
+.blog-text h2{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem 0;
+  font-size: 1.65rem;
+  font-weight: bold;
+}
+.blog-text p{
+  font-weight: 300;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  padding-bottom: 1.2rem;
+  color: #ffffff;
+}
+.blog-text a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--dark);
+  display: inline-block;
+  background: var(--dark);
+  color: #fff;
+  padding: 0.55rem 1.2rem;
+  transition: all 0.5s ease;
+}
 
-  .article img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .article-content {
-    padding: 15px;
-  }
-
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 0.9em;
-    color: #555;
-  }
+.img{
+  border: 0;
+  padding: 0;
+  display: flex;
+  max-width: fit-content;
+}
 
 .footer{
-    background-color: #3c6526;
+  background-color: #3c6526;
 }
